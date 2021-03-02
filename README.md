@@ -1,1 +1,0 @@
-# Dev-Rapido-de-AP-em-Python
