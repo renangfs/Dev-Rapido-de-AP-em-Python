@@ -5,6 +5,7 @@ link da aula: https://liveestacio.sharepoint.com/sites/team_3681950/Shared%20Doc
 
 <h1 ALIGN="center"> Dev Rapido de AP em Python </h1>
 <h3 ALIGN="center"> Metodo de Trabalho </h3>
+
 - RAD
 - reutilização de codigo
 - Criação de sistema com modulos (trabalhando nesses sistemas como se fosse um sistema único e idependente sendo assim mais organizado e com poucos erros)
