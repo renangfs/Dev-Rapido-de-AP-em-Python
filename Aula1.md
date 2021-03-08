@@ -16,9 +16,11 @@ O RAD é um método para desenvolvimento de softwares que permite uma prototipag
 
 - reutilização de codigo
 - Criação de sistema com modulos (trabalhando nesses sistemas como se fosse um sistema único e idependente sendo assim mais organizado e com poucos erros)
-- todosn os medulos do metodo RAD precisam ser precisos.
+- todos os medulos do metodo RAD precisam ser precisos.
 - Todo sistema tem que ser muito bem documentado
 - Uniformizar a forma de programação da equipe
+- GUI (INTERFACE GRAFICA USUARIO)
+- REQUISITOS FUNCIONAIS E NÃO FUNCIONAIS
 
 
 
