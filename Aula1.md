@@ -25,7 +25,7 @@ O RAD é um método para desenvolvimento de softwares que permite uma prototipag
 <table>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/61218420/110301958-7c988a80-7fd7-11eb-836c-85dda215c79d.png" width="400"> </td>
-    <td> </td>
+    <td><img src="https://user-images.githubusercontent.com/61218420/110303543-43f9b080-7fd9-11eb-884a-43d511e724d4.png" width="400"> </td>
   </tr> 
 </table>
 
