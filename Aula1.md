@@ -23,6 +23,9 @@ O RAD é um método para desenvolvimento de softwares que permite uma prototipag
 - REQUISITOS FUNCIONAIS E NÃO FUNCIONAIS
 <img src="https://user-images.githubusercontent.com/61218420/110301558-f67c4400-7fd6-11eb-9f6a-9d73bb707423.png" width="700">
 
+![image](https://user-images.githubusercontent.com/61218420/110301828-52df6380-7fd7-11eb-8597-577653c75cb5.png)
+
+
 
 
 
