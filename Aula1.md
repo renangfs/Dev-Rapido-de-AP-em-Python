@@ -22,8 +22,13 @@ O RAD é um método para desenvolvimento de softwares que permite uma prototipag
 - GUI (INTERFACE GRAFICA USUARIO)
 - REQUISITOS FUNCIONAIS E NÃO FUNCIONAIS
 <img src="https://user-images.githubusercontent.com/61218420/110301558-f67c4400-7fd6-11eb-9f6a-9d73bb707423.png" width="700">
+<table>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/61218420/110301958-7c988a80-7fd7-11eb-836c-85dda215c79d.png" width="400"> </td>
+    <td> </td>
+  </tr> 
+</table>
 
-<img src="https://user-images.githubusercontent.com/61218420/110301958-7c988a80-7fd7-11eb-836c-85dda215c79d.png" width="400">
 
 
 
