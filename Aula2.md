@@ -5,7 +5,7 @@
 - O RAD é iniciado des da separação das equipes
 - Prototipo do projeto: parta básica do projeto
 - escalabilidade: é a capacidade de crescer cada vez mais
-- Requisitos funcionais??????????????????
+- Requisitos funcionais??????????????????9:30
 
  <h2 align="center">As etapas do Modelo RAD</h2>
  
@@ -17,6 +17,10 @@
 -Modelagem do negocio: qual o resultado final de cada modulo
 -Modelagem dos dados: como os dados vão ser armazenados,tratados e modelados.
 -Modelagem dos projetos: estabelecer os Frameworks
+
+<h2>Frameworks GUI para PYTHON</h2>
+
+- objetivo é facilitar a interação com o usuario
 
 
 
