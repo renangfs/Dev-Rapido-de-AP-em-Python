@@ -5,6 +5,7 @@
 - O RAD é iniciado des da separação das equipes
 - Prototipo do projeto: parta básica do projeto
 - escalabilidade: é a capacidade de crescer cada vez mais
+- Requisitos funcionais??????????????????
 
  <h2 align="center">As etapas do Modelo RAD</h2>
  
