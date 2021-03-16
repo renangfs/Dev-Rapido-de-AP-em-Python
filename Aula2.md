@@ -1,8 +1,10 @@
 ### 16/03/2021
 
+- quanto menos se programa menos se erra
 - Framework são ferramentas que ajudam na montagem do software ,dependendo do framework é possivel fazer uma página inteira sem utilizar uma linha de codigo
 - O RAD é iniciado des da separação das equipes
 - Prototipo do projeto: parta básica do projeto
+- escalabilidade: é a capacidade de crescer cada vez mais
 
  <h2 align="center">As etapas do Modelo RAD</h2>
  
