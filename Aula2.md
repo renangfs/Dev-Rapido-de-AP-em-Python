@@ -14,9 +14,9 @@
 
 <h3> Modelagem</h3>
 
--Modelagem do negocio: qual o resultado final de cada modulo
--Modelagem dos dados: como os dados vão ser armazenados,tratados e modelados.
--Modelagem dos projetos: estabelecer os Frameworks
+- Modelagem do negocio: qual o resultado final de cada modulo
+- Modelagem dos dados: como os dados vão ser armazenados,tratados e modelados.
+- Modelagem dos projetos: estabelecer os Frameworks
 
 <h2>Frameworks GUI para PYTHON</h2>
 
