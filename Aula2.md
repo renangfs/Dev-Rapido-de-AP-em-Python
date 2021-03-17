@@ -8,6 +8,8 @@
 - escalabilidade: é a capacidade de crescer cada vez mais
 - Requisitos funcionais??????????????????9:30
 
+<img src="https://user-images.githubusercontent.com/61218420/111526806-f0f0cd80-873d-11eb-8c27-acd93d2046ab.jpg" width="600">
+
  <h2 align="center">As etapas do Modelo RAD</h2>
  
  - comunicação: entender oque o cliente deseja
