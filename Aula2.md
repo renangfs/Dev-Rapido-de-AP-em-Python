@@ -8,6 +8,7 @@
 - escalabilidade: é a capacidade de crescer cada vez mais
 <table>
       <tr>
+           <td>
            <ul>
                <h3>O que são requisitos funcionais?</h3>
                <li>inserir dados em um formulário;</li>
@@ -17,9 +18,9 @@
                <li>comunicar-se com um atendente;</li>
                <li>alterar informações de um registro;</li>
                <li>elaborar relatórios.</li>
-           <ul>
-       </tr> 
-        <tr>
+            <ul>
+           </td>
+           <td>
            <ul>
                <h3>O que são requisitos funcionais?</h3>
                <li>inserir dados em um formulário;</li>
@@ -29,6 +30,7 @@
                <li>comunicar-se com um atendente;</li>
                <li>alterar informações de um registro;</li>
                <li>elaborar relatórios.</li>
+            </td>
            <ul>
        </tr>
 </table>
