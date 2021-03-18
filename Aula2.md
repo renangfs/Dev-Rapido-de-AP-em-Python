@@ -8,6 +8,7 @@
 - escalabilidade: é a capacidade de crescer cada vez mais
 
 <img src="https://user-images.githubusercontent.com/61218420/111526806-f0f0cd80-873d-11eb-8c27-acd93d2046ab.jpg" width="600">
+<img src="https://user-images.githubusercontent.com/61218420/111567679-1b627b00-877e-11eb-88c4-5d63f17f56da.jpg" width="600">
 
  <h2 align="center">As etapas do Modelo RAD</h2>
  
