@@ -22,14 +22,14 @@
            </td>
            <td>
            <ul>
-               <h3>O que são requisitos funcionais?</h3>
-               <li>inserir dados em um formulário;</li>
-               <li>buscar pratos específicos em um cardápio</li>
-               <li>consultar o status de um pedido;</li>
-               <li>realizar compras;</li>
-               <li>comunicar-se com um atendente;</li>
-               <li>alterar informações de um registro;</li>
-               <li>elaborar relatórios.</li>
+               <h3>O que são requisitos não funcionais?</h3>
+               <li>tipo de sistema operacional;</li>
+               <li>hardware a ser utilizado;</li>
+               <li>processamento;</li>
+               <li>consumo de memória;</li>
+               <li>conexão;</li>
+               <li>banco de dados;</li>
+               <li>tipos de dispositivos em que o software pode ser usado.</li>
             </td>
            <ul>
        </tr>
