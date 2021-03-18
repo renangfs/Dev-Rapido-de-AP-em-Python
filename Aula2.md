@@ -7,10 +7,30 @@
 - Prototipo do projeto: parta básica do projeto
 - escalabilidade: é a capacidade de crescer cada vez mais
 <table>
-   <tr>
-     <td><img src="https://user-images.githubusercontent.com/61218420/111526806-f0f0cd80-873d-11eb-8c27-acd93d2046ab.jpg" width="300"></td>
-     <td><img src="https://user-images.githubusercontent.com/61218420/111567679-1b627b00-877e-11eb-88c4-5d63f17f56da.jpg" width="300"></td>
-   </tr>
+      <tr>
+           <ul>
+               <h3>O que são requisitos funcionais?</h3>
+               <li>inserir dados em um formulário;</li>
+               <li>buscar pratos específicos em um cardápio</li>
+               <li>consultar o status de um pedido;</li>
+               <li>realizar compras;</li>
+               <li>comunicar-se com um atendente;</li>
+               <li>alterar informações de um registro;</li>
+               <li>elaborar relatórios.</li>
+           <ul>
+       </tr> 
+        <tr>
+           <ul>
+               <h3>O que são requisitos funcionais?</h3>
+               <li>inserir dados em um formulário;</li>
+               <li>buscar pratos específicos em um cardápio</li>
+               <li>consultar o status de um pedido;</li>
+               <li>realizar compras;</li>
+               <li>comunicar-se com um atendente;</li>
+               <li>alterar informações de um registro;</li>
+               <li>elaborar relatórios.</li>
+           <ul>
+       </tr>
 </table>
  <h2 align="center">As etapas do Modelo RAD</h2>
  
