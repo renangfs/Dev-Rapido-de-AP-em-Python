@@ -6,6 +6,7 @@
 - O RAD é iniciado des da separação das equipes
 - Prototipo do projeto: parte básica do projeto
 - escalabilidade: é a capacidade de crescer cada vez mais
+- O uso do RAD não se aplica a sistemas com alto nivel de complexidade ou projetos grandes
 <table>
       <tr>
            <td>
