@@ -34,20 +34,40 @@ arquivo.readline() (obs.: não esqueça da identação)<br>
 
 ### 1) Criando um arquivo de cadastro
 
-arquivo = open("cadastro.txt","w")
-NOME = input('Nome: ')
-ENDER = input('Endereço: ')
-arquivo.write('Nome: ' + NOME + '\nEndereço: ' + ENDER)
-arquivo.close()
+arquivo = open("cadastro.txt","w")<br>
+NOME = input('Nome: ')<br>
+ENDER = input('Endereço: ')<br>
+arquivo.write('Nome: ' + NOME + '\nEndereço: ' + ENDER)<br>
+arquivo.close()<br>
 
 ### 2) Acrescentando dados no cadastro
 
-arquivo = open("cadastro.txt","a")
-NOME = input('Nome: ')
-ENDER = input('Endereço: ')
-arquivo.write('\n\nNome: ' + NOME + '\nEndereço: ' + ENDER)
-arquivo.close()
+arquivo = open("cadastro.txt","a")<br>
+NOME = input('Nome: ')<br>
+ENDER = input('Endereço: ')<br>
+arquivo.write('\n\nNome: ' + NOME + '\nEndereço: ' + ENDER)<br>
+arquivo.close()<br>
 
+### 3) Criar um programa com menu para inclusão, leitura, acrescentar dados de alunos, contendo os campos : matricula, nome, nota1, nota 2 e média, utilizando a estrutura enquanto de repetição. Criar um módulo de leitura dos dados do arquivo.
+
+*****************************************<br>
+** CADASTRO DE ALUNOS **<br>
+*****************************************<br>
+
+Criar Arquivo ----- <1><br>
+Adicionar dados --- <2><br>
+Leitura ----------- <3><br>
+Sair -------------- <4><br>
+
+********************************************<br>
+** Inclusão de Dados **<br>
+********************************************<br>
+
+Matricula:<br>
+Nome:<br>
+Nota-1:<br>
+Nota-2:<br>
+Media:<br>
 
 
 
