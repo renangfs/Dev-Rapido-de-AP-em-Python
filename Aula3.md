@@ -1,7 +1,7 @@
 ### 23/03/2021
 Link: http://portaldoaluno.webaula.com.br/Classroom/index.html?id=3700126&classId=911751&topicId=0&p0=03c7c0ace395d80182db07ae2c30f034&enableForum=S&enableMessage=N&enableClassMate=N
 <h1 align="center">Manipulação de dados com PYTHON<h1>
-  
+ <hr>
 ### Criação de arquivo texto:
 
 arquivo = open("arquivo1.txt","w")<br>
@@ -9,13 +9,13 @@ arquivo.write("Primeira linha do meu arquivo texto\n")<br>
 arquivo.write("Segunda linha do meu arquivo texto\n")<br>
 arquivo.write("Terceira linha do meu arquivo texto")<br>
 arquivo.close()<br>
-
+<hr>
 ### Leitura de arquivo texto:
 
 arquivo = open("arquivo1.txt","r")<br>
 print (arquivo.read())<br>
 arquivo.close()<br>
-
+<hr>
 ### Acrescentar dados no arquivo texto:
 
 Modo1:<br>
@@ -31,7 +31,7 @@ arquivo.write("\nDécima linha do meu arquivo texto\n")<br>
 arquivo.readline() (obs.: não esqueça da identação)<br>
 
 <h1 align="center">Exercício:<h1>
-
+<hr>
 ### 1) Criando um arquivo de cadastro
 
 arquivo = open("cadastro.txt","w")<br>
@@ -39,7 +39,7 @@ NOME = input('Nome: ')<br>
 ENDER = input('Endereço: ')<br>
 arquivo.write('Nome: ' + NOME + '\nEndereço: ' + ENDER)<br>
 arquivo.close()<br>
-
+<hr>
 ### 2) Acrescentando dados no cadastro
 
 arquivo = open("cadastro.txt","a")<br>
@@ -47,27 +47,75 @@ NOME = input('Nome: ')<br>
 ENDER = input('Endereço: ')<br>
 arquivo.write('\n\nNome: ' + NOME + '\nEndereço: ' + ENDER)<br>
 arquivo.close()<br>
-
+<hr>
 ### 3) Criar um programa com menu para inclusão, leitura, acrescentar dados de alunos, contendo os campos : matricula, nome, nota1, nota 2 e média, utilizando a estrutura enquanto de repetição. Criar um módulo de leitura dos dados do arquivo.
 
-*****************************************<br>
-** CADASTRO DE ALUNOS **<br>
-*****************************************<br>
+      *****************************************<br>
+      ** CADASTRO DE ALUNOS **<br>
+      *****************************************<br>
 
-Criar Arquivo ----- <1><br>
-Adicionar dados --- <2><br>
-Leitura ----------- <3><br>
-Sair -------------- <4><br>
+      Criar Arquivo ----- <1><br>
+      Adicionar dados --- <2><br>
+      Leitura ----------- <3><br>
+      Sair -------------- <4><br>
 
-********************************************<br>
-** Inclusão de Dados **<br>
-********************************************<br>
+      ********************************************<br>
+      ** Inclusão de Dados **<br>
+      ********************************************<br>
 
-Matricula:<br>
-Nome:<br>
-Nota-1:<br>
-Nota-2:<br>
-Media:<br>
+      Matricula:<br>
+      Nome:<br>
+      Nota-1:<br>
+      Nota-2:<br>
+      Media:<br>
+      <hr>
+      print("*****************************************")
+      print("********** CADASTRO DE ALUNOS ***********")
+      print("*****************************************")
+      ESC = 0
+      while ESC != 4:
+              print("_________MENU__________")
+              print("\nCriar Arquivo ----- <1>")
+              print("Adicionar dados --- <2>")
+              print("Leitura ----------- <3>")
+              print("Sair -------------- <4>")
+              print("_______________________")
+              ESC = int(input ('Digite um procedimento do menu: . . .'))#QUANDO CRIA OS ARQUIVOS COM O MESMO NOME DE PASTA APAGA DADOS ANTERIORES
+              if ESC == 1:
+                      arquivo = open("arquivo1.txt","w")
+                      arquivo.write("")
+                      arquivo.close()
+                      print("********************************************")
+                      print("****** Arquivo Criado com Sucesso **********")
+                      print("********************************************")
+              elif ESC == 2:
+                      FECHAR=0
+                      while FECHAR != 1:
+                              print("********************************************")
+                              print("********** Inclusão de Dados ***************")
+                              print("********************************************")
+                              MATRICULA = input ('Digite sua matricula: . . .')
+                              NOME = input ('Digite seu nome: . . .')
+                              N1 = int(input ('Digite sua nota 1: . . .'))
+                              N2 = int(input ('Digite sua nota 2: . . .'))
+                              MEDIA = (N1+N2)/2
+                              arquivo = open("arquivo1.txt","a")
+                              arquivo.write("Nome: "+NOME+"    matricula:"+MATRICULA)
+                              arquivo.write("\nnotas: {} e {}     media: {}\n\n".format(N1,N2,MEDIA))
+                              arquivo.close()
+                              FECHAR = int(input("Para sair digite(1) para outro digite (0)"))
+              elif ESC == 3:
+                      arquivo = open("arquivo1.txt","r")
+                      print("-----------------------------------")
+                      print (arquivo.read())
+                      print("-----------------------------------")
+                      arquivo.close()
+              elif ESC == 4:
+                      print("processo encerrado")
+
+
+            
+
 
 
 
