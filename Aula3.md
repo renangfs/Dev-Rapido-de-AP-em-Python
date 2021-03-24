@@ -68,7 +68,7 @@ arquivo.close()<br>
       Nota-1:<br>
       Nota-2:<br>
       Media:<br>
-      <hr>
+      
       print("*****************************************")
       print("********** CADASTRO DE ALUNOS ***********")
       print("*****************************************")
