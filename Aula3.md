@@ -25,7 +25,38 @@ arquivo.write("Quinta linha do meu arquivo texto\n")<br>
 arquivo.write("Sexta linha do meu arquivo texto")<br>
 arquivo.close()<br>
 
-Modo2:
+Modo2:<br>
 with open("arquivo1.txt","r+")as arquivo:<br>
 arquivo.write("\nDécima linha do meu arquivo texto\n")<br>
 arquivo.readline() (obs.: não esqueça da identação)<br>
+
+<h1 align="center">Exercício:<h1>
+
+### 1) Criando um arquivo de cadastro
+
+arquivo = open("cadastro.txt","w")
+NOME = input('Nome: ')
+ENDER = input('Endereço: ')
+arquivo.write('Nome: ' + NOME + '\nEndereço: ' + ENDER)
+arquivo.close()
+
+### 2) Acrescentando dados no cadastro
+
+arquivo = open("cadastro.txt","a")
+NOME = input('Nome: ')
+ENDER = input('Endereço: ')
+arquivo.write('\n\nNome: ' + NOME + '\nEndereço: ' + ENDER)
+arquivo.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
