@@ -1,7 +1,7 @@
 ### 23/03/2021
 Link: http://portaldoaluno.webaula.com.br/Classroom/index.html?id=3700126&classId=911751&topicId=0&p0=03c7c0ace395d80182db07ae2c30f034&enableForum=S&enableMessage=N&enableClassMate=N
 <h1 align="center">Manipulação de dados com PYTHON<h1>
- <hr>
+ 
 ### Criação de arquivo texto:
 
 arquivo = open("arquivo1.txt","w")<br>
@@ -9,13 +9,13 @@ arquivo.write("Primeira linha do meu arquivo texto\n")<br>
 arquivo.write("Segunda linha do meu arquivo texto\n")<br>
 arquivo.write("Terceira linha do meu arquivo texto")<br>
 arquivo.close()<br>
-<hr>
+
 ### Leitura de arquivo texto:
 
 arquivo = open("arquivo1.txt","r")<br>
 print (arquivo.read())<br>
 arquivo.close()<br>
-<hr>
+
 ### Acrescentar dados no arquivo texto:
 
 Modo1:<br>
@@ -31,7 +31,7 @@ arquivo.write("\nDécima linha do meu arquivo texto\n")<br>
 arquivo.readline() (obs.: não esqueça da identação)<br>
 
 <h1 align="center">Exercício:<h1>
-<hr>
+
 ### 1) Criando um arquivo de cadastro
 
 arquivo = open("cadastro.txt","w")<br>
@@ -39,7 +39,7 @@ NOME = input('Nome: ')<br>
 ENDER = input('Endereço: ')<br>
 arquivo.write('Nome: ' + NOME + '\nEndereço: ' + ENDER)<br>
 arquivo.close()<br>
-<hr>
+
 ### 2) Acrescentando dados no cadastro
 
 arquivo = open("cadastro.txt","a")<br>
@@ -47,7 +47,7 @@ NOME = input('Nome: ')<br>
 ENDER = input('Endereço: ')<br>
 arquivo.write('\n\nNome: ' + NOME + '\nEndereço: ' + ENDER)<br>
 arquivo.close()<br>
-<hr>
+
 ### 3) Criar um programa com menu para inclusão, leitura, acrescentar dados de alunos, contendo os campos : matricula, nome, nota1, nota 2 e média, utilizando a estrutura enquanto de repetição. Criar um módulo de leitura dos dados do arquivo.
 
       *****************************************<br>
