@@ -119,16 +119,22 @@ arquivo.close()<br>
 
 <h3>Atividade Autõnoma Aura:</h3>
 
-1) A metodologia de desenvolvimento rápido de software (RAD) tem como objetivos a acelerar o processo de entrega de software através de um processo que <br>prioreiza o desenvolvimento no curto prazo com entregas que incorporam conceitos bem debatidos com as partes envolvidas. Portanto a RAD possui vanatagens, em especial, em relação aos métodos tradicionais de desenvolvimento. Nesse sentido, selecione a opção que NÃO é uma vantagem de metodologia RAD.
+1) A metodologia de desenvolvimento rápido de software (RAD) tem como objetivos a acelerar o processo de entrega de software através de um processo que prioreiza o desenvolvimento no curto prazo com entregas que incorporam conceitos bem debatidos com as partes envolvidas. Portanto a RAD possui vanatagens, em especial, em relação aos métodos tradicionais de desenvolvimento. Nesse sentido, selecione a opção que NÃO é uma vantagem de metodologia RAD.
 
-a) Integração antecipada do sistema e redução de riscos<br>
+a) Integração antecipada do sistema e redução de riscos<br> X
 b) Adaptabilidade e compartimentação dos compenentes do sistema<br>
 c) Versões iterativas e menor tempo de colocação no mercado<br>
 d) Feedback constante do usuário<br>
 e) Ter como pré-requisito equipes tecnicamentes muito qualificadas<br>
 
 
+2)Para que o RAD posso comprir seu objetivo que é o de reduzir o tempo de entrega de produtos, ela precisa de ferramentas que facilitem o desenvolvimento de software . Um dos recursos meis importantes para atingir otal objetivo é ouso de fremeworks. Em relação  aos frameworks para desenvolvimento de aplicações RAD, selecione a opção CORRETA:
 
+a) A escolha de um framework sempre deve levar em conideraçãoas necessidades do projeto que se deseja implementar, portanto essa escolha tem que estar baseada nas bibliotecas, documentação disponível e a linguagem de programação disponibilizadas para desenvolver o projeto. X
+b) Independe da linguagem de programação escolhida é essencial que tenha copmo base o python por se tratar de uma linguagem moderna e bem documentada.
+c) Atualmente, qualquer projeto precisa levar em consideração do modelo cliente-servidor,portanto a escolha do framework deve levar isso em consideração.
+d) Qualquer projeto RAD implementado em Python deve utilizar frameworks Tkinter e Django.
+e) A escolha de um framework não deve levar em consideração as nessecidades do projeto que se deseja implementar. Ela tem que estar em consideração as necessidades do projeto que se deseja implementar. Ela tem que estar baseada nas bibliotecas, documentação disponivel e a linguagem de programação disponibilizadas para desenvolver o projeto.
 
 
 
