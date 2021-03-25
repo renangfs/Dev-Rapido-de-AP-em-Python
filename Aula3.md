@@ -50,7 +50,7 @@ arquivo.close()<br>
 
 ### 3) Criar um programa com menu para inclusão, leitura, acrescentar dados de alunos, contendo os campos : matricula, nome, nota1, nota 2 e média, utilizando a estrutura enquanto de repetição. Criar um módulo de leitura dos dados do arquivo.
 
-      *****************************************<br>
+      *****************************************
       ** CADASTRO DE ALUNOS **<br>
       *****************************************<br>
 
