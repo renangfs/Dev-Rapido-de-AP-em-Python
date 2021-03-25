@@ -103,7 +103,7 @@ arquivo.close()<br>
                               arquivo.write("Nome: "+NOME+"    matricula:"+MATRICULA)
                               arquivo.write("\nnotas: {} e {}     media: {}\n\n".format(N1,N2,MEDIA))
                               arquivo.close()
-                              FECHAR = int(input("Para sair digite(1) para outro digite (0)"))
+                              FECHAR = int(input("Para voltar ao MENU digite(1) para outro cadastro digite (0)"))
               elif ESC == 3:
                       arquivo = open("arquivo1.txt","r")
                       print("-----------------------------------")
@@ -111,8 +111,9 @@ arquivo.close()<br>
                       print("-----------------------------------")
                       arquivo.close()
               elif ESC == 4:
-                      print("processo encerrado")
-
+                      print("********************************************")
+                      print("********** Processo Encerrado **************")
+                      print("********************************************")
 
             
 
