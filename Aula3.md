@@ -54,20 +54,20 @@ arquivo.close()<br>
       ** CADASTRO DE ALUNOS **
       *****************************************
 
-      Criar Arquivo ----- <1><br>
-      Adicionar dados --- <2><br>
-      Leitura ----------- <3><br>
-      Sair -------------- <4><br>
+      Criar Arquivo ----- <1>
+      Adicionar dados --- <2>
+      Leitura ----------- <3>
+      Sair -------------- <4>
 
-      ********************************************<br>
-      ** Inclusão de Dados **<br>
-      ********************************************<br>
+      ********************************************
+      ** Inclusão de Dados **
+      ********************************************
 
-      Matricula:<br>
-      Nome:<br>
-      Nota-1:<br>
-      Nota-2:<br>
-      Media:<br>
+      Matricula:
+      Nome:
+      Nota-1:
+      Nota-2:
+      Media:
       
       print("*****************************************")
       print("********** CADASTRO DE ALUNOS ***********")
