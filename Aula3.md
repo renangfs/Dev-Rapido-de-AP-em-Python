@@ -119,7 +119,7 @@ arquivo.close()<br>
 
 <h3>Atividade Autônoma Aura:</h3>
 
-     1)  A metodologia de desenvolvimento rápido de software (RAD) tem como objetivos a acelerar o processo de entrega de software através de um processo que         prioreiza o desenvolvimento no curto prazo com entregas que incorporam conceitos bem debatidos com as partes envolvidas. Portanto a RAD possui               vanatagens, em especial, em relação aos métodos tradicionais de desenvolvimento. Nesse sentido, selecione a opção que NÃO é uma vantagem de                   metodologia RAD.
+1)A metodologia de desenvolvimento rápido de software (RAD) tem como objetivos a acelerar o processo de entrega de software através de um processo que         prioreiza o desenvolvimento no curto prazo com entregas que incorporam conceitos bem debatidos com as partes envolvidas. Portanto a RAD possui               vanatagens, em especial, em relação aos métodos tradicionais de desenvolvimento. Nesse sentido, selecione a opção que NÃO é uma vantagem de                   metodologia RAD. 
 
 a) Integração antecipada do sistema e redução de riscos X<br>
 b) Adaptabilidade e compartimentação dos compenentes do sistema<br>
