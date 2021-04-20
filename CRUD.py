@@ -26,7 +26,7 @@ while(op != 5):#Estrutura de repetição
 
             comando="""INSERT INTO pessoa (id,nome,telefone) VALUES("""           
             sql = comando+dados   
-                                            
+            
             cursor = conn.cursor()
             cursor.execute(sql)
             conn.commit()#Salvando alterações
@@ -105,7 +105,6 @@ while(op != 5):#Estrutura de repetição
             altid = input("Digite o ID para ser alterado: ")
             novonome = input("Digite o NOVO NOME: ")
             novotelefone = input("Digite o NOVO TELEFONE: ")
-
             alterar_dados = "UPDATE pessoa SET nome = '{}', telefone = '{}' WHERE id = '{}' ".format(novonome,novotelefone, altid)
 
             cursor = conn.cursor()
@@ -121,7 +120,6 @@ while(op != 5):#Estrutura de repetição
         conn = mysql.connector.connect(host='localhost',database='bd',user='root',password='')#coloquei a conexão aqui para evitar erros
         try:
             pesqId = input("Digite o ID para ser excluido: ")
-
             dell_dados = "DELETE FROM pessoa WHERE pessoa.id = {}".format(pesqId)
             
             cursor = conn.cursor()
