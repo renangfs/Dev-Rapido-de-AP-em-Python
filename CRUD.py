@@ -42,6 +42,7 @@ while(op != 5):#Estrutura de repetição
                 conn.close()
                 print("Conexão encerrada")
                 MENU=(input("Pressione qualquer tecla para voltar ao menu...."))
+                
     if op == 2:#lendo dados do banco
         conn = mysql.connector.connect(host='localhost',database='bd',user='root',password='')#coloquei a conexão aqui para evitar erros
         print("------------------------------------")
@@ -116,6 +117,7 @@ while(op != 5):#Estrutura de repetição
         except Error as erro:
             print(erro)
         MENU=(input("Pressione qualquer tecla para voltar ao menu...."))
+
     if op == 4:
         conn = mysql.connector.connect(host='localhost',database='bd',user='root',password='')#coloquei a conexão aqui para evitar erros
         try:
