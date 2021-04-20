@@ -20,8 +20,7 @@ while(op != 5):#Estrutura de repetição
             idpessoaa=(input("Digite seu id:..."))
             nomea=input("Digite seu nome:...")
             telefonea=input("Digite seu telefone:...")
-
-
+            
             dados = idpessoaa+',\''+nomea+'\',\''+telefonea+'\')'#padrões (\'') para por aspa no inicio ('\')para por aspa no final
             #print (dados) ...ver as ordens dos dados
 
