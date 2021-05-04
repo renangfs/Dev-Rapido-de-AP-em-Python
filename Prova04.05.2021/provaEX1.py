@@ -1,0 +1,10 @@
+arquivo = open("dadosAluno.txt","w")
+arquivo.write("\n\nNome do Aluno: Renan Germano Flor dos Santos\n")
+arquivo.write("Matricula do Aluno: 202002199652\n")
+arquivo.write("Email do aluno: 202002199652@alunos.estacio.br\n")
+arquivo.write("Data: 04/05/2021                   Hora:08:07 \n")
+arquivo.close()
+
+arquivo = open("dadosAluno.txt","r")
+print (arquivo.read())
+arquivo.close()
