@@ -2,23 +2,23 @@ from tkinter import *
 import os
 
 
-def GravaDados(vnome,vmatri,vn1,vn2):#função para mostrar nome no terminal e ao lado do campo de registro 
-    fr_quadro2=Frame(app, borderwidth=1,relief="solid",background="#dde")
+def GravaDados(vnome,vmatri,vn1,vn2):#função para gravar dados
+    fr_quadro2=Frame(app, borderwidth=1,relief="solid",background="#dde")#fundo padrão para sobrepor funções anteriores
     fr_quadro2.place(x=0,y=0,width=1020,height=720)
-    #media=vn1+vn2/2 problemas ao calcular media
+    #media=vn1+vn2/2 ............problema ao calcular media
     try:#Tratamento de erro
         arquivo= open ("C:\\Users\\renan\\Desktop\\pasta\\teste.txt", "a")
         arquivo.write("Nome:"+vnome+"      Matricula:"+vmatri+"\n")
         arquivo.write("Nota 1: "+vn1+"      Nota 2: "+vn2+"     Media: #media""\n\n")
         arquivo.close()
-        msgE1=Label(app, text="Dados cadastrados com sucesso!",bg="#dde",fg="green",font="consolas 15",anchor=W).place(x=370,y=260,width=400,height=20)#Esolha da operação
+        msgE1=Label(app, text="Dados cadastrados com sucesso!",bg="#dde",fg="green",font="consolas 15",anchor=W).place(x=370,y=260,width=400,height=20)# msg ao cliente
     except IOError as erro:    
-        msgE2=Label(app, text="Falha ao salvar os dados",bg="#dde",fg="red",font="consolas 15",anchor=W).place(x=410,y=260,width=300,height=20)#Esolha da operação
-        msgE3=Label(app, text=erro,bg="#dde",fg="red",font="consolas 15",anchor=W).place(x=100,y=280,width=900,height=20)#Esolha da operação
+        msgE2=Label(app, text="Falha ao salvar os dados",bg="#dde",fg="red",font="consolas 15",anchor=W).place(x=410,y=260,width=300,height=20)# msg ao cliente
+        msgE3=Label(app, text=erro,bg="#dde",fg="red",font="consolas 15",anchor=W).place(x=100,y=280,width=900,height=20)# msg ao cliente
 
 
-def Criar():#função para mostrar nome no terminal e ao lado do campo de registro 
-    fr_quadro2=Frame(app, borderwidth=1,relief="solid",background="#dde")
+def Criar():
+    fr_quadro2=Frame(app, borderwidth=1,relief="solid",background="#dde")#fundo padrão para sobrepor funções anteriores
     fr_quadro2.place(x=0,y=0,width=1020,height=720)
 
     label = Label(app,
@@ -30,23 +30,22 @@ def Criar():#função para mostrar nome no terminal e ao lado do campo de regist
 
 
     try:#Tratamento de erro
-        arquivo= open ("C:\\Users\\renan\\Desktop\\pasta\\teste.txt", "x")# "X" apenas cria o arquivo 
+        arquivo= open ("C:\\Users\\renan\\Desktop\\pasta\\teste.txt", "x")# "X" apenas cria o arquivo e se o arquivo já existir da erro
         print("\n\n****Arquivo Criado com sucesso!****\n\n")
-        msgE1=Label(app, text="Arquivo Criado com sucesso!",bg="#dde",fg="green",font="consolas 15",anchor=W).place(x=370,y=260,width=300,height=20)#Esolha da operação
+        msgE1=Label(app, text="Arquivo Criado com sucesso!",bg="#dde",fg="green",font="consolas 15",anchor=W).place(x=370,y=260,width=300,height=20)#msg ao cliente
         arquivo.close()
     except IOError as erro:#Tratamento de erro 
         print("-----------------------------------")
         print("Arquivo já existente !!!")
         print("Descrição: ",erro)
         print("Término do programa")
-        msgE2=Label(app, text="arquivo já  existente",bg="#dde",fg="red",font="consolas 15",anchor=W).place(x=410,y=260,width=300,height=20)#Esolha da operação
-        msgE3=Label(app, text=erro,bg="#dde",fg="red",font="consolas 15",anchor=W).place(x=100,y=280,width=900,height=20)#Esolha da operação
+        msgE2=Label(app, text="arquivo já  existente",bg="#dde",fg="red",font="consolas 15",anchor=W).place(x=410,y=260,width=300,height=20)#msg ao cliente
+        msgE3=Label(app, text=erro,bg="#dde",fg="red",font="consolas 15",anchor=W).place(x=100,y=280,width=900,height=20)#msg ao cliente
         print("-----------------------------------")
         MENU=(input("Pressione qualquer tecla para voltar ao menu....")) 
 
 def Ler(): 
-    fr_quadro2=Frame(app, borderwidth=1,relief="solid",background="#dde")
-
+    fr_quadro2=Frame(app, borderwidth=1,relief="solid",background="#dde")#fundo padrão para sobrepor funções anteriores
     fr_quadro2.place(x=0,y=0,width=1020,height=720)
 
     label = Label(app,
@@ -58,21 +57,21 @@ def Ler():
  
 
     t=Text(app,font="consolas 15")
-    t.place(x=10,y=35,width=1000,height=650)
+    t.place(x=10,y=35,width=1000,height=650)#"t" recebe e mostra o insert no campo texto
     try:
         arquivo = open("C:\\Users\\renan\\Desktop\\pasta\\teste.txt", "r")
-        #print (arquivo.read()) #para saida grafica
+        #print (arquivo.read()) #da erro para leitura grafica
         copia = arquivo.read()
-        t.insert(0.0,copia)
+        t.insert(0.0,copia)# joga o insert do arquivo que foi lido para "t"
         arquivo.close()
     except FileNotFoundError as erro:
-        msgE2=Label(app, text="arquivo não encontrado",bg="white",fg="red",font="consolas 15",anchor=W).place(x=410,y=260,width=300,height=20)#Esolha da operação
-        msgE2=Label(app, text=erro,bg="white",fg="red",font="consolas 15",anchor=W).place(x=30,y=280,width=950,height=20)#Esolha da operação
+        msgE2=Label(app, text="arquivo não encontrado",bg="white",fg="red",font="consolas 15",anchor=W).place(x=410,y=260,width=300,height=20)#msg ao cliente
+        msgE2=Label(app, text=erro,bg="white",fg="red",font="consolas 15",anchor=W).place(x=30,y=280,width=950,height=20)#msg ao cliente
    
 
 
 def Acrescentar():
-    fr_quadro2=Frame(app, borderwidth=1,relief="solid",background="#dde")
+    fr_quadro2=Frame(app, borderwidth=1,relief="solid",background="#dde")#fundo padrão para sobrepor funções anteriores
     fr_quadro2.place(x=0,y=0,width=1020,height=720)
 
     label = Label(app,
@@ -82,39 +81,39 @@ def Acrescentar():
     font="system 20 bold")
     label.place(x=10,y=10,width=1000,height=20)
 
-    vnome=Label(app, text="Nome:",bg="#dde",fg="black",font="consolas 15",anchor=W).place(x=300,y=40,width=600,height=40)#Esolha da operação
+    vnome=Label(app, text="Nome:",bg="#dde",fg="black",font="consolas 15",anchor=W).place(x=300,y=40,width=600,height=40)#Nome
     vnome=Entry(app, textvariable=vnome,font="times 20")
     vnome.place(x=300,y=80,width=400,height=40)
 
-    vmatri=Label(app, text="Matricula:",bg="#dde",fg="black",font="consolas 15",anchor=W).place(x=300,y=150,width=600,height=40)#Esolha da operação
+    vmatri=Label(app, text="Matricula:",bg="#dde",fg="black",font="consolas 15",anchor=W).place(x=300,y=150,width=600,height=40)#Matricula
     vmatri=Entry(app, textvariable=vmatri,font="times 20")
     vmatri.place(x=300,y=190,width=400,height=40)
 
-    vn1=Label(app, text="Nota 1:",bg="#dde",fg="black",font="consolas 15",anchor=W).place(x=300,y=250,width=600,height=40)#Esolha da operação
+    vn1=Label(app, text="Nota 1:",bg="#dde",fg="black",font="consolas 15",anchor=W).place(x=300,y=250,width=600,height=40)#Nota 1
     vn1=Entry(app, textvariable=vn1,font="times 20")
     vn1.place(x=300,y=290,width=400,height=40)
 
-    vn2=Label(app, text="Nota 2:",bg="#dde",fg="black",font="consolas 15",anchor=W).place(x=300,y=350,width=600,height=40)#Esolha da operação
+    vn2=Label(app, text="Nota 2:",bg="#dde",fg="black",font="consolas 15",anchor=W).place(x=300,y=350,width=600,height=40)#Nota 2
     vn2=Entry(app, textvariable=vn2,font="times 20")
     vn2.place(x=300,y=390,width=400,height=40)
 
 
 
-    Envia = Button(app, text="Enviar", command=lambda:GravaDados(vnome.get(),vmatri.get(),vn1.get(),vn2.get()),font="consolas 25",anchor=W).place(x=430,y=500,width=130,height=50)# Cria o botão e envia para função mostrar nome
+    Envia = Button(app, text="Enviar", command=lambda:GravaDados(vnome.get(),vmatri.get(),vn1.get(),vn2.get()),font="consolas 25",anchor=W).place(x=430,y=500,width=130,height=50)# Cria o botão e envia para função Gravar dados
     Envia.pack()       
 
 
 
 def Excluir():
-    fr_quadro2=Frame(app, borderwidth=1,relief="solid",background="#dde")
+    fr_quadro2=Frame(app, borderwidth=1,relief="solid",background="#dde")#fundo padrão para sobrepor funções anteriores
     fr_quadro2.place(x=0,y=0,width=1020,height=720)
     try:
-        os.path.exists("C:\\Users\\renan\\Desktop\\pasta\\teste.txt")
+        os.path.exists("C:\\Users\\renan\\Desktop\\pasta\\teste.txt")#verifica se o caminho para pasta a ser removida exixte
         os.remove("C:\\Users\\renan\\Desktop\\pasta\\teste.txt")
-        msgE1=Label(app, text="Arquivo Removido!",bg="#dde",fg="green",font="consolas 15",anchor=W).place(x=400,y=260,width=400,height=20)#Esolha da 
+        msgE1=Label(app, text="Arquivo Removido!",bg="#dde",fg="green",font="consolas 15",anchor=W).place(x=400,y=260,width=400,height=20)#msg ao cliente
     except IOError as erro:#Tratamento de erro 
-        msgE1=Label(app, text="Arquivo Inesistente para ser excluido",bg="#dde",fg="red",font="consolas 15",anchor=W).place(x=310,y=260,width=500,height=20)#Esolha da operação
-        msgE1=Label(app, text=erro,bg="#dde",fg="red",font="consolas 15",anchor=W).place(x=15,y=280,width=950,height=20)#Esolha da operação
+        msgE1=Label(app, text="Arquivo Inesistente para ser excluido",bg="#dde",fg="red",font="consolas 15",anchor=W).place(x=310,y=260,width=500,height=20)#msg ao cliente
+        msgE1=Label(app, text=erro,bg="#dde",fg="red",font="consolas 15",anchor=W).place(x=15,y=280,width=950,height=20)v
 
 
 
