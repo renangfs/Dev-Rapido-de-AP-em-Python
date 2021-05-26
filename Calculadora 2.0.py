@@ -1,22 +1,11 @@
 from tkinter import *
-
+#https://www.youtube.com/watch?v=pxi8ec-mqAQ&t=26s
 calc=Tk()
+calc.title("Calculadora")
 calc.configure(background="#1C1C1C")
 calc.resizable(False, False)#usuario não pode alterar o tamanho da janela
 calc.geometry("373x553")
-
-class HoverButton(Button):
-	def __init__(self, master, **kw):
-		Button.__init__(self,master=master,**kw)
-		self.defaultBackground = self["background"]
-		self.bind("<Enter>", self.on_enter)
-		self.bind("<Leave>", self.on_leave)
-
-	def on_enter(self, e):
-		self["background"] = self["activebackground"]
-
-	def on_leave(self, e):
-		self["background"] = self.defaultBackground
+calc.attributes("-alpha",1)#configuração para deixar a calculadora trasparente
 
 i=0
 def obter(dato):
