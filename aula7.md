@@ -6,4 +6,4 @@
 <h4>1) Desenvolva um programa em Python em que seja possivel incluir, alterar, consultar e deletar registros de um Banco de dados.</h4>
   
 <h4>link do programa: https://github.com/renangfs/Dev-Rapido-de-AP-em-Python/blob/main/CRUD.py<br>
-link do database: https://github.com/renangfs/Dev-Rapido-de-AP-em-Python/blob/main/BD_CRUDsql</h4>
+link do database: https://github.com/renangfs/Dev-Rapido-de-AP-em-Python/blob/main/BD_CRUD.sql</h4>
