@@ -1,5 +1,4 @@
 from tkinter import *
-#https://www.youtube.com/watch?v=pxi8ec-mqAQ&t=26s
 calc=Tk()
 calc.title("Calculadora")
 calc.configure(background="#1C1C1C")
