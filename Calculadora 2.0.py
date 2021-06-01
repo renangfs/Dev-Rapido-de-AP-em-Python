@@ -1,4 +1,5 @@
 from tkinter import *
+
 calc=Tk()
 calc.title("Calculadora")
 calc.configure(background="#1C1C1C")
@@ -11,6 +12,22 @@ def obter(dato):
 	global i
 	i+=1
 	visor.insert(i, dato)
+def click_igual_enter(event):#Calcula pessionando enter
+	global i
+	equacao = visor.get()
+	if i !=0:		
+		try:
+			result = str(eval(equacao))#calcula a equação
+			visor.delete(0,END)#apaga o visor
+			visor.insert(0,result)#insere o resultado
+			longitud = len(result)#pega o comprimento de numeros do resultado
+			i = longitud# i recebe o comprimento do resultado
+		except:#tratamento de erro caso de erro na equação
+			result = 'ERROR'
+			visor.delete(0,END)
+			visor.insert(0,result)
+	else:
+		pass
 def click_igual():
 	global i
 	equacao = visor.get()
@@ -37,7 +54,6 @@ def click_dell():
 def deletar():
 	visor.delete(0, END)	
 	i=0
-
 def inverte():
 	inv = visor.get()
 	invert = float(inv)
@@ -54,16 +70,27 @@ def inverte():
 		visor.delete(0,END)
 		visor.insert(0,inve)
 
+		#Tentando criar porcentagem
+'''def por():
+	porcent=str(visor.get())
+	cem=str("/100")
+	print(porcent+cem)
+	porcentagem= str(eval(porcent+cem))#calcula a equação
+	visor.delete(0,END)#apaga o visor
+	visor.insert(0,porcentagem)#insere o resultado'''
+
+
 visor=Entry(calc,bg="#1C1C1C",fg="#F0F8FF",font=("yu 35"),bd=0)
 visor.place(x=7,y=70,width=360,height=56)
 visor.config(justify='right')#configuração para deixar as string no canto direito
 
+
 #Filera 0  # outros Blaks..090909...090a0a
 bt1=Button(calc,text="CE", bg="#101010",fg="#F0F8FF", pady="20", padx="27",bd=0, command=lambda: deletar(),font=("consolas 15 bold"))
 bt1.place(x=5,y=155)
-bt1=Button(calc,text="%", bg="#101010",fg="#F0F8FF", pady="20", padx="32",bd=0,command=lambda: obter('%'),font=("consolas 15 bold"))
+bt1=Button(calc,text="x²", bg="#101010",fg="#F0F8FF", pady="20", padx="26",bd=0,command=lambda: obter('**2'),font=("consolas 15 bold"))
 bt1.place(x=97,y=155)
-bt1=Button(calc,text="/", bg="#101010",fg="#F0F8FF", pady="20", padx="32",bd=0, command=lambda: obter('/'),font=("consolas 15 bold"))
+bt1=Button(calc,text="÷", bg="#101010",fg="#F0F8FF", pady="20", padx="32",bd=0, command=lambda: obter('/'),font=("consolas 15"))
 bt1.place(x=188,y=155)
 bt1=Button(calc,text="⌫", bg="#101010",fg="#F0F8FF", pady="20", padx="25",bd=0,font=("consolas 15 "),command=lambda: click_dell())
 bt1.place(x=279,y=155)
@@ -75,7 +102,7 @@ bt1=Button(calc,text="8", bg="#010101",fg="#F0F8FF", pady="20", padx="32",bd=0, 
 bt1.place(x=97,y=235)
 bt1=Button(calc,text="9", bg="#010101",fg="#F0F8FF", pady="20", padx="32",bd=0, command= lambda:obter(9),font=("consolas 15 bold"))
 bt1.place(x=188,y=235)
-bt1=Button(calc,text="X", bg="#101010",fg="#F0F8FF", pady="20", padx="32",bd=0, command=lambda: obter('*'),font=("consolas 15 bold"))
+bt1=Button(calc,text="X", bg="#101010",fg="#F0F8FF", pady="20", padx="32",bd=0, command=lambda: obter('*'),font=("consolas 15 "))
 bt1.place(x=279,y=235)
 
 #Filera 2
@@ -107,6 +134,7 @@ bt1.place(x=97,y=475)
 bt1=Button(calc,text=".", bg="#010101",fg="#F0F8FF", pady="20", padx="32",bd=0,command=lambda: obter('.'),font=("consolas 15 bold"))
 bt1.place(x=188,y=475)
 bt1=Button(calc,text="=", bg="#363636",fg="#F0F8FF", pady="20", padx="32",bd=0,command=lambda: click_igual(),font=("consolas 15 bold"))
+calc.bind('<Return>', click_igual_enter)#calcula pressionando enter
 bt1.place(x=279,y=475)
 
 calc.mainloop()
