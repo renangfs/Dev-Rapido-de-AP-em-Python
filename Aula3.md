@@ -19,6 +19,7 @@ Link: http://portaldoaluno.webaula.com.br/Classroom/index.html?id=3700126&classI
 ### Acrescentar dados no arquivo texto:
 
 Modo1:<br>
+ 
       arquivo = open("arquivo1.txt","a")<br>
       arquivo.write("\nQuarta linha do meu arquivo texto\n")<br><br>
       arquivo.write("Quinta linha do meu arquivo texto\n")<br>
@@ -26,6 +27,7 @@ Modo1:<br>
       arquivo.close()<br>
 
 Modo2:<br>
+ 
       with open("arquivo1.txt","r+")as arquivo:<br>
       arquivo.write("\nDécima linha do meu arquivo texto\n")<br>
       arquivo.readline() (obs.: não esqueça da identação)<br>
