@@ -46,8 +46,6 @@ def mudar(altid,anome,an1,an2):
         print(erro)
         MENU=(input("Pressione qualquer tecla para voltar ao menu...."))
         
-        
-    
 def GravaDados(vnome,vmatri,vn1,vn2):#função para gravar dados
     fr_quadro2=Frame(app, borderwidth=1,relief="solid",background="#dde")#fundo padrão para sobrepor funções anteriores
     fr_quadro2.place(x=0,y=0,width=1020,height=720)
@@ -88,7 +86,7 @@ def GravaDados(vnome,vmatri,vn1,vn2):#função para gravar dados
 
 def registrar():
     
-    fr_quadro2=Frame(app, borderwidth=1,relief="solid",background="#dde")
+    fr_quadro2=Frame(app, borderwidth=1,relief="solid",background="#dde")#fundo padrão para sobrepor funções anteriores
     fr_quadro2.place(x=0,y=0,width=1020,height=720)
 
     altid=Label(app, text="CADASTRAR DADOS",bg="#dde",fg="black",font="consolas 35 bold",anchor=W).place(x=300,y=20,width=600,height=40)
@@ -208,10 +206,6 @@ def excluir():
 
     Envia = Button(app, text="Enviar",bg="#808080",fg="#010101", command=lambda:delldados(pesqId.get()),font="consolas 25 bold").place(x=380,y=400,width=200,height=50)# Cria o botão e envia para função Gravar dados
     
-
-        
-
-
 fr_quadro2=Frame(app, borderwidth=1,relief="solid",background="#dde")
 fr_quadro2.place(x=0,y=0,width=1020,height=720)
 menu=Label(app, text="MENU",bg="#dde",fg="black",font="consolas 60 bold",).place(x=220,y=50,width=600,height=80)
@@ -226,12 +220,7 @@ bt3.place(x=70,y=450)
 
 bt4=Button(app,text="Excluir", bg="#808080",fg="#010101", pady="40", padx="64",bd=10,font=("consolas 40 bold"),command=lambda: excluir())
 bt4.place(x=550,y=450)
-''''
-barrademenu=Menu(app)
-vmenu=Menu(barrademenu)
-vmenu.add_command(label="MENU",command=lambda: menu())
-vmenu.config(font=("system 40 bold"))
-'''
+
 def menu():
     fr_quadro2=Frame(app, borderwidth=1,relief="solid",background="#dde")
     fr_quadro2.place(x=0,y=0,width=1020,height=720)
@@ -247,12 +236,6 @@ def menu():
 
     bt4=Button(app,text="Excluir", bg="#808080",fg="#010101", pady="40", padx="64",bd=10,font=("consolas 40 bold"),command=lambda: excluir())
     bt4.place(x=550,y=450)
-'''
-vmenu.add_separator()
-vmenu.add_command(label="Fechar",command=quit)
-barrademenu.add_cascade(label="Contatos",menu=vmenu)
-app.config(menu=vmenu)
-'''
-app.mainloop()
 
+app.mainloop()
 
