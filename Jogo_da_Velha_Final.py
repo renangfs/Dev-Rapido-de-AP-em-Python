@@ -14,7 +14,6 @@ MATRIZ=[
     [0,0,0],
     [0,0,0]
 ]
-
 def cb1(l,c,posx,posy):#Linha e coluna que vão ser acionadas quando ocorrer o click no botão
     global QTD
     global XO
@@ -103,14 +102,10 @@ def cb1(l,c,posx,posy):#Linha e coluna que vão ser acionadas quando ocorrer o c
                 else:
                     showinfo(title="GANHADOR",
                     message="O jogador que estava jogando com o 'O' GANHOU")
-
     if(XO == 1):
         XO = 2
     else:
         XO = 1
-
-
-
 #Filera 1 
 bt1=Button(velha,bg="#808080",fg="#010101", pady="80", padx="105",bd=0,font=("consolas 15 bold"),command=lambda: cb1(0,0,10,30))
 bt1.place(x=10,y=30)
@@ -118,7 +113,6 @@ bt1=Button(velha, bg="#808080",fg="#010101", pady="80", padx="105",bd=0,font=("c
 bt1.place(x=240,y=30)
 bt1=Button(velha, bg="#808080",fg="#010101", pady="80", padx="105",bd=0,font=("consolas 15 bold"),command=lambda: cb1(0,2,470,30))
 bt1.place(x=470,y=30)
-
 #Filera 2
 bt1=Button(velha, bg="#808080",fg="#010101", pady="80", padx="105",bd=0,font=("consolas 15 bold"),command=lambda: cb1(1,0,10,230))
 bt1.place(x=10,y=230)
@@ -126,7 +120,6 @@ bt1=Button(velha, bg="#808080",fg="#010101", pady="80", padx="105",bd=0,font=("c
 bt1.place(x=240,y=230)
 bt1=Button(velha, bg="#808080",fg="#010101", pady="80", padx="105",bd=0,font=("consolas 15 bold"),command=lambda: cb1(1,2,470,230))
 bt1.place(x=470,y=230)
-
 #Filera 3
 bt1=Button(velha, bg="#808080",fg="#010101", pady="80", padx="105",bd=0,font=("consolas 15 bold"),command=lambda: cb1(2,0,10,430))
 bt1.place(x=10,y=430)
